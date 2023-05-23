@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/index.css">
+  <title>Consultoria de Carreira</title>
+
+</head>
+<body>
+  <header>
+    <div id="box-img">
+      <img src="./img/MARIÂNGELA-06_preview_rev_1.png" alt="logo consultoria"/>
+
+    </div>
+  </header>
+  <div id="container">
+
+    <div id="box-1">
+      <section>
+        <img src="./img/segurando_caneca_cafe.jpg">
+        <div class="containerText">
+          <h2>Sobre nós</h2>
+          <p>A consultoria de carreira é um serviço profissional especializado que visa auxiliar na elaboração de um plano de recolocação ou transição profissional. Através da revisão e elaboração de currículo, consultoria no LinkedIn, orientação e simulação de entrevistas, criação de vídeos de apresentação, redação de cartas de apresentação e interação com o mercado, busca-se proporcionar um suporte completo para impulsionar o progresso na carreira.</p>
+        </div>
+      </section>
+    </div>
+    
+    <div id="box-2">
+      <section>
+        <div class="containerText">
+          <h2>Serviços</h2>
+          <ul>
+            <li>
+              Elaboração e revisão de currículo:
+              <p>Ajudamos na criação e aprimoramento do seu currículo, garantindo que ele esteja bem estruturado, organizado e destacando suas habilidades e experiências relevantes.</p>
+            </li>
+            <li>
+              Orientação e revisão de LinkedIn:
+              <p>Fornecemos orientação especializada para otimizar o seu perfil no LinkedIn, destacando suas competências, experiências e tornando-o mais atraente para recrutadores e empregadores.</p>
+            </li>
+            <li>
+              Orientação e simulação de entrevista:
+              <p>Preparamos você para entrevistas de emprego, fornecendo orientação sobre as melhores práticas, conduzindo simulações de entrevistas e oferecendo feedback valioso para melhorar suas habilidades de entrevista.</p>
+            </li>
+            <li>
+              Interação com o mercado:
+              <p>Oferecemos suporte e orientação na interação com o mercado de trabalho, fornecendo insights sobre tendências, demandas e estratégias para aumentar suas chances de sucesso na busca por oportunidades profissionais.</p>
+            </li>
+          </ul>
+        </div>
+        <img src="./img/digitando_notebook.jpg">
+      </section>
+    </div>
+
+    <div id="box-3">
+      <section>
+        <div id="map"></div>
+        <div class="containerText">
+          <h2>Contato</h2>
+            <ul>
+              <li>
+                Telefone:
+                <p>(41) 98823-5601</p>
+              </li>
+              <li>
+                E-mail:
+                <p>mavalmrathconsultoria@gmail.com</p>
+              </li>
+              <li>
+                Endereço:
+                <p>Curitba, Paraná</p>
+              </li>
+            </ul>
+        </div>
+        
+      </section>
+    </div>
+    
+  </div>
+
+
+  <footer>
+    <div id="box-social">
+      <a href="https://www.instagram.com/mariangela.valmrath/" target="_blank">
+        <img src="./img/instagram-logo.png">
+      </a>
+      <a href="https://www.linkedin.com/in/mari%C3%A2ngeladoamaralvalmrath/?originalSubdomain=br" target="_blank">
+        <img src="./img/LinkedIn_logo_initials.png">
+      </a>
+    </div>
+    <p>&copy; 2023 MA Valmrath Consultoria de Carreira. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    function initMap() {
+      var curitiba = { lat: -25.4294, lng: -49.2719 }; // Coordenadas de Curitiba
+
+      var map = new google.maps.Map(document.getElementById("map"), {
+        zoom: 13,
+        center: curitiba
+      });
+
+      var marker = new google.maps.Marker({
+        position: curitiba,
+        map: map
+      });
+    }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJyO3dyxU4WSJT2gIQKZH6GwYITeCpuk&callback=initMap" async defer></script>
+
+</body>
+</html>

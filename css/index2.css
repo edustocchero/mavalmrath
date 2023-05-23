@@ -1,0 +1,172 @@
+:root {
+  --dark-green: #1F4C09;
+  --light-green: #547606;
+  --green: #83b01b;
+  --max-width: 1024px;
+  --black: #000000;
+  --white: #fafafa;
+
+  --gradient-bg: linear-gradient(to left, #2E8B57, #D3D3D3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Playfair Display', serif;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 32pt;
+}
+
+h2,
+h3 {
+  font-size: 28pt;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  text-decoration: underline;
+}
+
+section {
+  padding: 16px;
+}
+
+p {
+  font-size: 18pt;
+}
+
+strong {
+  font-size: 16pt;
+  text-decoration: underline;
+}
+
+ul,
+li {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+header {
+  background-image: var(--gradient-bg);
+  width: 100%;
+  height: 150px;
+}
+
+.header-sticky {
+  position: fixed;
+  top: 0;
+}
+
+#servicos {
+  background-color: var(--dark-green);
+  color: #78a312;
+}
+
+#sobre-nos {
+  color: var(--dark-green);
+}
+
+#contato {
+  background-color: var(--green);
+  color: var(--dark-green);
+}
+
+.header-nav {
+  padding: 0;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  gap: 32px;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--black);
+  font-style: none;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  margin: 0;
+  height: 150px;
+  width: auto;
+}
+
+main {
+  max-width: 100%;
+}
+
+.sobre {
+  display: flex;
+  justify-content: space-between;
+  gap: 8rem;
+}
+
+.sobre > img {
+  margin-top: -100px;
+}
+
+.servicos {
+  display: flex;
+  justify-content: space-between;
+  gap: 4rem;
+}
+
+.servicos > img {
+  height: 100%;
+  width: auto;
+}
+
+.servicos-list {
+  display: block;
+  grid-auto-rows: 1fr;
+  row-gap: 0px;
+}
+
+footer {
+  height: 200px;
+  background-color: var(--black);
+  color: var(--light-green);
+}
+
+.contatos {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media (max-width: 768px) {
+  img:not(.header-logo) {
+    display: none;
+  }
+
+  .contatos {
+    flex-direction: column;
+  }
+}
