@@ -183,9 +183,4 @@ footer {
   .footer {
     flex-direction: column;
   }
-
-  .sociais {
-    display: flex;
-    justify-content: space-between;
-  }
 }
