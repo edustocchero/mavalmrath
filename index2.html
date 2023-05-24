@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariângela Valmrath Consultoria de Carreira">
+  <meta name="keywords" content="valmrath, consultoria, carreira,"/>
+  <meta name="robots" content="index">
   <title>MAValmrath - Consultoria de Carreira</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,7 +42,8 @@
             apresentação e interação com o mercado, busca-se proporcionar um suporte completo para impulsionar o
             progresso na carreira.
           </p>
-          <img src="./img/segurando_caneca_cafe.jpg" alt="" />
+          <img src="./img/segurando_caneca_cafe.jpg"
+            alt="Mulher segurando uma caneca enquanto utiliza o computador" />
         </div>
       </div>
     </section>
@@ -47,7 +51,8 @@
       <div class="wrapper">
         <h2>Serviços</h2>
         <div class="servicos">
-          <img src="./img/digitando_notebook.jpg" alt="">
+          <img src="./img/digitando_notebook.jpg"
+            alt="">
           <ul class="servicos-list">
             <li>
               <strong>Elaboração e revisão de currículo:</strong>
@@ -86,46 +91,44 @@
     <section id="contato">
       <div class="wrapper">
         <h3>Contato</h3>
-        <div id="map"></div>
-        <ul class="contatos">
-          <li>
-            Telefone:
-            <p>(41) 98823-5601</p>
-          </li>
-          <li>
-            E-mail:
-            <p>mavalmrathconsultoria@gmail.com</p>
-          </li>
-          <li>
-            Endereço:
-            <p>Curitba, Paraná</p>
-          </li>
-        </ul>
+        <!-- <div id="map"></div> -->
+        <div>
+          <ul class="contatos">
+            <li>
+              Telefone:
+              <p>(41) 98823-5601</p>
+            </li>
+            <li>
+              E-mail:
+              <p>mavalmrathconsultoria@gmail.com</p>
+            </li>
+            <li>
+              Endereço:
+              <p>Curitba, Paraná</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="wrapper">
-      <p style="margin: 0;">&copy; 2023 MA Valmrath Consultoria de Carreira. Todos os direitos reservados.</p>
+    <div class="wrapper footer">
+      <div class="sociais">
+        <a href="https://www.instagram.com/mariangela.valmrath/" target="_blank">
+          <img class="social-logo" src="./img/instagram-logo.png" alt="Logo do Instagram">
+        </a>
+        <a  href="https://www.linkedin.com/in/mari%C3%A2ngeladoamaralvalmrath/?originalSubdomain=br"
+        target="_blank">
+          <img class="social-logo" src="./img/LinkedIn_logo_initials.png" alt="Logo do LinkedIn">
+        </a>
+      </div>
+      <p>
+        <small>
+          &copy; 2023 MA Valmrath Consultoria de Carreira. Todos os direitos reservados.
+        </small>
+      </p>
     </div>
   </footer>
-  <script>
-    function initMap() {
-      var curitibaCoordinates = { lat: -25.4294, lng: -49.2719 };
-
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: curitibaCoordinates
-      });
-
-      var marker = new google.maps.Marker({
-        position: curitibaCoordinates,
-        map: map
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJyO3dyxU4WSJT2gIQKZH6GwYITeCpuk&callback=initMap"
-    async="async" defer="defer"></script>
 </body>
 
 </html>
