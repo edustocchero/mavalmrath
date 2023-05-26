@@ -42,6 +42,7 @@ section {
 
 p {
   font-size: 18pt;
+  text-align: justify;
 }
 
 strong {
@@ -67,7 +68,7 @@ header {
   color: #78a312;
 }
 
-#sobre-nos {
+#sobre {
   color: var(--dark-green);
 }
 
@@ -119,13 +120,7 @@ main {
 }
 
 .sobre {
-  display: flex;
-  justify-content: space-between;
-  gap: 8rem;
-}
-
-.sobre > img {
-  margin-top: -100px;
+  display: grid;
 }
 
 .servicos {
@@ -143,6 +138,10 @@ main {
   display: block;
   grid-auto-rows: 1fr;
   row-gap: 0px;
+}
+
+.servico-descricao {
+  word-break: break-all;
 }
 
 footer {
