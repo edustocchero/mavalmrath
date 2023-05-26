@@ -42,6 +42,7 @@ section {
 
 p {
   font-size: 18pt;
+  text-align: justify;
 }
 
 strong {
@@ -62,17 +63,12 @@ header {
   height: 150px;
 }
 
-.header-sticky {
-  position: fixed;
-  top: 0;
-}
-
 #servicos {
   background-color: var(--dark-green);
   color: #78a312;
 }
 
-#sobre-nos {
+#sobre {
   color: var(--dark-green);
 }
 
@@ -97,9 +93,9 @@ header {
   font-style: none;
 }
 
-.container {
-  width: 100%;
-  margin: 0 auto;
+.social-logo {
+  height: 50px;
+  width: auto;
 }
 
 .wrapper {
@@ -124,19 +120,13 @@ main {
 }
 
 .sobre {
-  display: flex;
-  justify-content: space-between;
-  gap: 8rem;
-}
-
-.sobre > img {
-  margin-top: -100px;
+  display: grid;
 }
 
 .servicos {
   display: flex;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
 }
 
 .servicos > img {
@@ -150,10 +140,25 @@ main {
   row-gap: 0px;
 }
 
+.servico-descricao {
+  word-break: break-all;
+}
+
 footer {
-  height: 200px;
+  height: fit-content;
   background-color: var(--black);
   color: var(--light-green);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.footer > p {
+  margin: 0;
 }
 
 .contatos {
@@ -162,11 +167,19 @@ footer {
 }
 
 @media (max-width: 768px) {
-  img:not(.header-logo) {
+  p {
+    word-wrap: break-word;
+  }
+
+  img:not(.header-logo, .social-logo) {
     display: none;
   }
 
   .contatos {
+    flex-direction: column;
+  }
+
+  .footer {
     flex-direction: column;
   }
 }

@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mariângela Valmrath Consultoria de Carreira">
+  <meta name="keywords" content="valmrath, consultoria, carreira,"/>
+  <!-- <meta name="robots" content="index"> -->
   <title>MAValmrath - Consultoria de Carreira</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,7 +22,7 @@
       <img class="header-logo" src="./img/MARIÂNGELA-06_preview_rev_1.png" alt="logo consultoria" />
       <nav class="header-nav">
         <ul class="nav-list">
-          <li><a class="nav-link" href="#sobre-nos">Sobre Nós</a></li>
+          <li><a class="nav-link" href="#sobre">Sobre</a></li>
           <li><a class="nav-link" href="#servicos">Serviços</a></li>
           <li><a class="nav-link" href="#contato">Contato</a></li>
         </ul>
@@ -27,19 +30,17 @@
     </div>
   </header>
   <main>
-    <section id="sobre-nos">
+    <section id="sobre">
       <div class="wrapper">
-        <h1>Sobre nós</h1>
+        <h1>Sobre</h1>
         <div class="sobre">
           <p>
             A consultoria de carreira é um serviço profissional especializado que visa auxiliar na elaboração de um
-            plano
-            de recolocação ou transição profissional. Através da revisão e elaboração de currículo, consultoria no
-            LinkedIn, orientação e simulação de entrevistas, criação de vídeos de apresentação, redação de cartas de
-            apresentação e interação com o mercado, busca-se proporcionar um suporte completo para impulsionar o
+            plano de recolocação ou transição profissional. Através da revisão e elaboração de currículo, consultoria
+            no LinkedIn, orientação e simulação de entrevistas, criação de vídeos de apresentação, redação de cartas
+            de apresentação e interação com o mercado, busca-se proporcionar um suporte completo para impulsionar o
             progresso na carreira.
           </p>
-          <img src="./img/segurando_caneca_cafe.jpg" alt="" />
         </div>
       </div>
     </section>
@@ -47,25 +48,25 @@
       <div class="wrapper">
         <h2>Serviços</h2>
         <div class="servicos">
-          <img src="./img/digitando_notebook.jpg" alt="">
+          <img src="./img/digitando_notebook.jpg" alt="Pessoa prestando serviço">
           <ul class="servicos-list">
             <li>
               <strong>Elaboração e revisão de currículo:</strong>
-              <p>
+              <p class="servico-descricao">
                 Ajudamos na criação e aprimoramento do seu currículo, garantindo que ele esteja bem estruturado,
                 organizado e destacando suas habilidades e experiências relevantes.
               </p>
             </li>
             <li>
               <strong>Orientação e revisão de LinkedIn:</strong>
-              <p>
+              <p class="servico-descricao">
                 Fornecemos orientação especializada para otimizar o seu perfil no LinkedIn, destacando suas
                 competências, experiências e tornando-o mais atraente para recrutadores e empregadores.
               </p>
             </li>
             <li>
               <strong>Orientação e simulação de entrevista:</strong>
-              <p>
+              <p class="servico-descricao">
                 Preparamos você para entrevistas de emprego, fornecendo orientação sobre as melhores práticas,
                 conduzindo simulações de entrevistas e oferecendo feedback valioso para melhorar suas habilidades de
                 entrevista.
@@ -73,7 +74,7 @@
             </li>
             <li>
               <strong>Interação com o mercado:</strong>
-              <p>
+              <p class="servico-descricao">
                 Oferecemos suporte e orientação na interação com o mercado de trabalho, fornecendo insights sobre
                 tendências, demandas e estratégias para aumentar suas chances de sucesso na busca por oportunidades
                 profissionais.
@@ -86,46 +87,43 @@
     <section id="contato">
       <div class="wrapper">
         <h3>Contato</h3>
-        <div id="map"></div>
-        <ul class="contatos">
-          <li>
-            Telefone:
-            <p>(41) 98823-5601</p>
-          </li>
-          <li>
-            E-mail:
-            <p>mavalmrathconsultoria@gmail.com</p>
-          </li>
-          <li>
-            Endereço:
-            <p>Curitba, Paraná</p>
-          </li>
-        </ul>
+        <div>
+          <ul class="contatos">
+            <li>
+              Telefone:
+              <p>(41) 98823-5601</p>
+            </li>
+            <li>
+              E-mail:
+              <p>mavalmrathconsultoria@gmail.com</p>
+            </li>
+            <li>
+              Endereço:
+              <p>Curitiba, Paraná</p>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
   </main>
   <footer>
-    <div class="wrapper">
-      <p style="margin: 0;">&copy; 2023 MA Valmrath Consultoria de Carreira. Todos os direitos reservados.</p>
+    <div class="wrapper footer">
+      <div class="sociais">
+        <a href="https://www.instagram.com/mariangela.valmrath/" target="_blank">
+          <img class="social-logo" src="./img/instagram-logo.png" alt="Logo do Instagram">
+        </a>
+        <a  href="https://www.linkedin.com/in/mari%C3%A2ngeladoamaralvalmrath/?originalSubdomain=br"
+        target="_blank">
+          <img class="social-logo" src="./img/LinkedIn_logo_initials.png" alt="Logo do LinkedIn">
+        </a>
+      </div>
+      <p>
+        <small>
+          &copy; 2023 MA Valmrath Consultoria de Carreira. Todos os direitos reservados.
+        </small>
+      </p>
     </div>
   </footer>
-  <script>
-    function initMap() {
-      var curitibaCoordinates = { lat: -25.4294, lng: -49.2719 };
-
-      var map = new google.maps.Map(document.getElementById("map"), {
-        zoom: 13,
-        center: curitibaCoordinates
-      });
-
-      var marker = new google.maps.Marker({
-        position: curitibaCoordinates,
-        map: map
-      });
-    }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFJyO3dyxU4WSJT2gIQKZH6GwYITeCpuk&callback=initMap"
-    async="async" defer="defer"></script>
 </body>
 
 </html>
